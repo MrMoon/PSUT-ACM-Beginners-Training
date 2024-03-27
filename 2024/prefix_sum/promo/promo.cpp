@@ -23,6 +23,9 @@ int main() {
 
     // we buy the most expensive x items from all of the items which costs prefix[n - x + y].
     // then we know that we will take y items for free, so we subtract the cost of the items we can buy prefix[n - x].
+    // the sum of a[l] + a[l + 1] + ... + a[r] 
+	// = (sum of a[0] + a[1] + ... + a[r]) - (sum of a[0] + a[1] + ... + a[l - 1])
+	// here l and r, and buying x items and taking y for free.
     while(q--) {
         cin >> x >> y;
         printf("%lld\n", prefix[n - x + y] - prefix[n - x]);

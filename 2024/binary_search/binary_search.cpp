@@ -2,12 +2,13 @@
 
 using namespace std;
 
+// Find the number k in a sorted array of length n in O(log(n)) complexity
 int main() {
     int n, k; // n is the size of the array, and k is the number we're looking for.
     cin >> n >> k;
 
     vector<int> v(n); 
-    for (auto& x: v) cin >> x;
+    for (auto& x: v) cin >> x; // similar to for (int i = 0 ; i < n ; ++i) cin >> v[i];
 
     // sort(v.begin(), v.end()); // sort the array to do binary search if it was not sorted.
 
